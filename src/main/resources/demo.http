@@ -1,0 +1,8 @@
+POST http://localhost:8081/v1/mail
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{     "from": "13262270185@163.com",     "to": ["535080691@qq.com"],     "subject": "test mail",     "content": "this is a test mail" }
+
+###

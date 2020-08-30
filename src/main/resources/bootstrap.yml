@@ -1,0 +1,22 @@
+spring:
+  freemarker:
+    request-context-attribute: request
+    suffix: .ftl
+    content-type: text/html
+    enabled: true
+    cache: false
+    template-loader-path: classpath:/static/
+    charset: utf-8
+  mail:
+    host: ${mail.host:smtp.163.com}
+    port: ${mail.port:25}
+    username: ${mail.username:13262270185@163.com}
+    password: ${mail.password:SDPRJJJJGOZTOIRL}
+
+messages:
+  i18n:
+    path: classpath:/i18n/messages
+    encoding: UTF-8
+    cache-seconds: 5
+    code-as-default-message: false
+
