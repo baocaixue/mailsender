@@ -3,6 +3,16 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{     "from": "13262270185@163.com",     "to": ["535080691@qq.com"],     "subject": "test mail",     "content": "this is a test mail" }
+{
+  "from": "13262270185@163.com",
+  "to": ["535080691@qq.com"],
+  "cc": ["13262270185@163.com"],
+  "subject": "test",
+  "templateData": {
+    "user": "isaac",
+    "data": "test"
+  },
+  "templateName": "dummy"
+}
 
 ###

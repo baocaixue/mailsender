@@ -3,6 +3,8 @@ package com.isaac.mailsender.domain;
 import lombok.Data;
 import lombok.ToString;
 
+import java.util.Map;
+
 @Data
 @ToString
 public class MailInfo {
@@ -12,4 +14,8 @@ public class MailInfo {
     private String[] bcc;
     private String subject;
     private String content;
+    private String[] attachmentPaths;
+
+    private String templateName;
+    private Map<String, Object> templateData;
 }

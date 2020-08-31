@@ -20,3 +20,7 @@ messages:
     cache-seconds: 5
     code-as-default-message: false
 
+mail-sender:
+  templates-folder: classpath:/templates/
+  context-path: /mail
+

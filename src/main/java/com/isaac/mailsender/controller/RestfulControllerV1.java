@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import javax.mail.MessagingException;
 
 @RestController
 @AllArgsConstructor
@@ -22,7 +21,7 @@ public class RestfulControllerV1 {
 
     @PostMapping(value = "/mail")
     @ResponseStatus(HttpStatus.CREATED)
-    public void handleMailProcess(@RequestBody MailInfo jsonString) throws MessagingException {
+    public void handleMailProcess(@RequestBody MailInfo jsonString) throws Exception {
         mailMessageService.sendMail(jsonString);
     }
 }
